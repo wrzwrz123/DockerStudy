@@ -46,7 +46,7 @@ docker update CONTAINER --memory 500MB：修改容器限制
 
 ## 实战
 ```
-进入AC Terminal，然后：
+进入Terminal，然后：
 
 scp /var/lib/acwing/docker/images/docker_lesson_1_0.tar server_name:  # 将镜像上传到自己租的云端服务器  
 ssh server_name  # 登录自己的云端服务器  
@@ -58,7 +58,7 @@ docker attach my_docker_server  # 进入创建的docker容器
 passwd  # 设置root密码  
 去云平台控制台中修改安全组配置，放行端口20000。  
 
-返回AC Terminal，即可通过ssh登录自己的docker容器：  
+返回Terminal，即可通过ssh登录自己的docker容器：  
 
 ssh root@xxx.xxx.xxx.xxx -p 20000  # 将xxx.xxx.xxx.xxx替换成自己租的服务器的IP地址
 然后，可以仿照上节课内容，创建工作账户acs。
